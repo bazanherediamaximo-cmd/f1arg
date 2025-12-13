@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reglamento 2026 - F1 ARG</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: { f1red:'#e10600', f1dark: '#15151e', f1gray: '#38383f' },
+                        fontFamily: { racing: ['"F1Font"', 'sans-serif'], sans: ['"Outfit"', 'sans-serif'] }
+                    }
+                }
+            }
+        </script>
+        <style>
+            body { background-color: #15151e; color: white; }
+            @font-face { 
+                font-family: 'F1Font'; src: url('fonts/Formula1-Regular_web_0.ttf') format('truetype'); 
+                font-weight: normal; 
+                font-style: normal; 
+            }
+            @font-face { 
+                font-family: 'F1Font'; src: url('fonts/Formula1-Bold_web_0.ttf') format('truetype'); 
+                font-weight: bold; 
+                font-style: normal; 
+            }
+            .glass-panel { 
+                background: rgba(255,255,255,0.05); 
+                backdrop-filter: blur(10px); 
+                border: 1px solid rgba(255,255,255,0.1); 
+            }
+            .gradient-text { 
+                background-clip: text; 
+                -webkit-background-clip: text; 
+                color: transparent; 
+                background-image: linear-gradient(to right, #f97316, #3b82f6); 
+            }
+        </style>
+    </head>
+    <body class="font-sans">
+
+        <nav class="bg-f1dark border-b border-gray-800 fixed w-full z-50 top-0">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20 w-full">
+                    <div class="flex-shrink-0 flex items-center cursor-pointer">
+                        <a href="index.html">
+                            <img src="images/f1arg.png" alt="F1 ARG Logo" class="h-12 w-auto object-contain">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center gap-8">
+                        <a href="index.html" class="text-gray-300 hover:text-white text-sm font-bold uppercase tracking-wider transition font-racing">Volver al Inicio</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="relative py-32 text-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://media.formula1.com/image/upload/t_16by9Centre/c_lfill,w_3392/q_auto/v1740000000/fom-website/2024/2026%20regulations/7.webp" alt="F1 2026 Concept" class="w-full h-full object-cover opacity-30">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#15151e] to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 px-4">
+                <span class="inline-block border border-orange-500 text-orange-500 px-4 py-1 rounded-full text-sm font-bold tracking-widest mb-6">REGLAMENTO TÉCNICO</span>
+                <h1 class="text-5xl md:text-8xl font-racing mb-6">EL <span class="gradient-text">2026</span></h1>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    La Fórmula 1 se reinventa. Autos más chicos, motores más eficientes y aerodinámica activa para carreras más emocionantes.
+                </p>
+            </div>
+        </header>
+
+        <section class="py-16 px-4 max-w-7xl mx-auto">
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+                <div>
+                    <img src="https://cdn-images.motor.es/image/m/1320w/fotos-noticias/2021/09/nuevo-motor-f1-retrasa-2026-claves-202181078-1631349938_1.jpg" alt="Motor F1 2026" class="rounded-xl shadow-2xl border border-gray-700">
+                </div>
+                <div>
+                    <h2 class="text-4xl font-racing text-white mb-6">Unidad de Potencia <span class="text-blue-500">50/50</span></h2>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        Se viene el cambio más grande en motores. La potencia eléctrica aumenta casi un 300% (a 350kW). Ahora el motor de combustión interna y el sistema eléctrico entregarán la misma cantidad de potencia (aprox. 500cv cada uno).
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex-items-center gap-3"><i class="fa-solid fa-bolt text-yellow-400"></i> Más de 1000 caballos de fuerza total.</li>
+                        <li class="flex-items-center gap-3"><i class="fa-solid fa-leaf text-green-400"></i> Combustible 100% sustentable.</li>
+                        <li class="flex-items-center gap-3"><i class="fa-solid fa-ban text-red-500"></i> Chau al MGU-H (menos costo, más ruido).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+                <div class="md:order-2">
+                    <img src="https://www.pmw-magazine.com/wp-content/uploads/2024/06/Screenshot-2024-06-06-at-17-15-12-The-Future-of-F1-Showcasing-the-2026-FIA-Technical-Regulations-%E2%80%93-Lighter-Safer-More-Competitive.png" alt="Chasis F1 2026" class="rounded-xl shadow-2xl border border-gray-700">
+                </div>
+                <div class="md:order-1">
+                    <h2 class="text-4xl font-racing text-white mb-6">Autos más <span class="text-orange-500">Ágiles</span></h2>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        Escucharon a los pilotos: los autos serán más chicos y livianos para mejorar la pelea rueda a rueda. Se busca recuperar la agilidad de épocas pasadas.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass-panel p-4 rounded-lg text-center">
+                            <span class="block text-3xl font-bold font-racing">-200mm</span>
+                            <span class="text-xs text-gray-500 uppercase">Distancia entre ejes</span>
+                        </div>
+                        <div class="glass-panel p-4 rounded-lg text-center">
+                            <span class="block text-3xl font-bold font-racing">-100mm</span>
+                            <span class="text-xs text-gray-500 uppercase">Ancho total</span>
+                        </div>
+                        <div class="glass-panel p-4 rounded-lg text-center">
+                            <span class="block text-3xl font-bold font-racing">-30kg</span>
+                            <span class="text-xs text-gray-500 uppercase">Peso mínimo</span>
+                        </div>
+                        <div class="glass-panel p-4 rounded-lg text-center">
+                            <span class="block text-3xl font-bold font-racing">18"</span>
+                            <span class="text-xs text-gray-500 uppercase">Neumáticos más pequeños</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel p-8 rounded-2xl border-l-4 border-blue-500">
+                <h2 class="text-3xl font-racing mb-4">Aerodinámica activa (Modo X / Modo Z)</h2>
+                <p class="text-gray-300 mb-6">
+                    Se acabó el DRS como lo conocemos. Ahora todo el auto cambia de forma.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-xl text-white mb-2"><i class="fa-solid fa-wind text-blue-400 mr-2"></i>MODO Z (Curvas)</h4>
+                        <p class="text-sm text-gray-400">Alerones cerrados para máxima carga aerodinámica y agarre en las curvas</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-xl text-white mb-2"><i class="fa-solid fa-rocket text-orange-400 mr-2"></i>MODO X (Rectas)</h4>
+                        <p class="text-sm text-gray-400">Los alerones se abren para reducit la resistencia y alcanzar mayores velocidades en las rectas</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="bg-black mx-auto py-8 border-t border-gray-900 mt-12">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <p class="text-gray-600 text-sm">&copy; 2025 F1 Argentina. Sitio no oficial.</p>
+            </div>
+        </footer>
+
+    </body>
+    
+</html>
